@@ -3,14 +3,14 @@
  * @copyright   Copyright (c) 2016 OA Wu Design
  */
 
-$mainWidth: 1200px !global;
+$mainWidth: 1000px !global;
 
 $mediaMiniMobileWidth: 384px !global;
-$mediaMobileWidth: 640px !global;
+$mediaMobileWidth: 1000px !global;
 $mediaTabletWidth: 960px !global;
 
 $mainBackgroundColor: rgba(255, 255, 255, 1) !global;
-$mainBackgroundImage: image-url('bg/grunge.png', false, false) !global;
+$mainBackgroundImage: image-url('bg.jpg', false, false) !global;
 
 $btns: (
   'red':  (244, 67, 54),

@@ -11,6 +11,8 @@ $(function () {
       }
       $(this).find ('a').click (function () {
         $(this).addClass ('a').siblings ().removeClass ('a');
+        window.location.assign ($(this).attr ('href'));
+        
       });
 
       $(this).toggleClass ('s');
@@ -19,6 +21,7 @@ $(function () {
   }
   $('body > *:nth-child(2)').each (function () {
     var $that = $(this);
+    $(this).height ($(window).height () * 0.65);
     setTimeout (function () {
       $(this).height ($(this).find ('img').height ());
     }.bind ($(this)), 500);

@@ -45,6 +45,7 @@ body > *:nth-child(5) {
         text-align: left;
         &.a {
           color: rgba(151, 121, 94, 1.00);
+          font-weight: bold;
         }
         + a {
           border-top: 1px solid rgba(39, 40, 34, .300);

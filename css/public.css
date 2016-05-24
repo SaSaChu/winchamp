@@ -329,7 +329,7 @@ body > header > div > *:last-child a {
   body > header > div > *:last-child a:not(:first-child) {
     border-top: 5px solid transparent;
   }
-  body > header > div > *:last-child a:not(:first-child):hover {
+  body > header > div > *:last-child a:not(:first-child).a, body > header > div > *:last-child a:not(:first-child):hover {
     background-color: #5fc2c2;
     color: white;
     border-top: 5px solid #d5f135;

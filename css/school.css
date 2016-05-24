@@ -135,57 +135,58 @@ body > *:nth-child(5) > div > *:last-child {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding: 25px;
-  padding-bottom: 0;
+  padding: 15px;
+  padding-bottom: 25px;
   border: 3px solid #d3d4d5;
   border-left: 0;
   border-right: 0;
   background: #feffff url('/winchamp/img/aboutbg.png');
 }
-body > *:nth-child(5) > div > *:last-child header {
-  border-left: 3px solid #cfed22;
-  padding-left: 20px;
-}
-body > *:nth-child(5) > div > *:last-child section {
-  border-left: 3px solid #5fc2c2;
-  padding-left: 20px;
-}
-body > *:nth-child(5) > div > *:last-child > div {
-  margin-top: 20px;
+body > *:nth-child(5) > div > *:last-child > header {
+  border-bottom: 2px solid #b3dddc;
+  padding-bottom: 10px;
   *zoom: 1;
 }
-body > *:nth-child(5) > div > *:last-child > div:after {
+body > *:nth-child(5) > div > *:last-child > header:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-body > *:nth-child(5) > div > *:last-child > div > *:first-child, body > *:nth-child(5) > div > *:last-child > div > *:last-child {
+body > *:nth-child(5) > div > *:last-child > header > *:first-child, body > *:nth-child(5) > div > *:last-child > header > *:last-child {
   float: left;
   position: relative;
   display: inline-block;
 }
-body > *:nth-child(5) > div > *:last-child > div > *:last-child {
+body > *:nth-child(5) > div > *:last-child > header > *:last-child {
   float: right;
 }
-body > *:nth-child(5) > div > *:last-child > div > *:first-child {
-  width: 300px;
+body > *:nth-child(5) > div > *:last-child > header > *:first-child {
+  width: 32px;
 }
-body > *:nth-child(5) > div > *:last-child > div > *:last-child {
-  width: calc(100% - 300px);
+body > *:nth-child(5) > div > *:last-child > header > *:last-child {
+  width: calc(100% - 32px);
 }
-body > *:nth-child(5) > div > *:last-child > div > *:first-child {
-  text-align: left;
+body > *:nth-child(5) > div > *:last-child > header > *:last-child {
+  color: #fa8a01;
+  font-size: 22px;
+  padding-left: 10px;
+  font-weight: bold;
 }
-body > *:nth-child(5) > div > *:last-child > div > *:first-child img {
-  width: auto;
+body > *:nth-child(5) > div > *:last-child > header:not(:first-child) {
+  margin-top: 30px;
 }
-body > *:nth-child(5) > div > *:last-child > div > *:last-child {
-  text-align: right;
-  line-height: 0;
+body > *:nth-child(5) > div > *:last-child > p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
-body > *:nth-child(5) > div > *:last-child > div > *:last-child span {
-  line-height: 20px;
-  font-size: 40px;
-  margin-left: 10px;
+body > *:nth-child(5) > div > *:last-child > span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+body > *:nth-child(5) > div > *:last-child > span img {
+  margin: 0 auto;
+  max-width: 100%;
 }

@@ -32,6 +32,11 @@
     @content;
   }
 }
+@mixin is-n ($n) {
+  &:nth-child(#{$n}) {
+    @content;
+  }
+}
 @mixin font-smoothing ($val: antialiased) {
   -moz-osx-font-smoothing: $val;
    -webkit-font-smoothing: $val;

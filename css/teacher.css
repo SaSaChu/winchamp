@@ -1,0 +1,244 @@
+/**
+* @author      OA Wu <comdan66@gmail.com>
+* @copyright   Copyright (c) 2016 OA Wu Design
+*/
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+body > *:nth-child(4) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body > *:nth-child(4) > div {
+  text-align: left;
+}
+body > *:nth-child(4) > div a {
+  display: inline-block;
+  color: #fb9950;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0 2px;
+  padding-bottom: 1px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+}
+body > *:nth-child(4) > div a.active, body > *:nth-child(4) > div a:hover {
+  color: #fb9950;
+  border-bottom: 1px solid #fb9950;
+}
+
+body > *:nth-child(5) {
+  margin-bottom: 30px;
+}
+body > *:nth-child(5) > div {
+  background-color: white;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: left;
+}
+body > *:nth-child(5) > div > header {
+  padding: 20px;
+  background: url('/winchamp/img/fuck3.png');
+  *zoom: 1;
+}
+body > *:nth-child(5) > div > header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+body > *:nth-child(5) > div > header > *:first-child, body > *:nth-child(5) > div > header > *:last-child {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+body > *:nth-child(5) > div > header > *:last-child {
+  float: right;
+}
+body > *:nth-child(5) > div > header > *:first-child {
+  width: 32px;
+}
+body > *:nth-child(5) > div > header > *:last-child {
+  width: calc(100% - 32px);
+}
+body > *:nth-child(5) > div > header > *:last-child {
+  color: white;
+  font-size: 22px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+body > *:nth-child(5) > div article {
+  padding: 20px;
+}
+body > *:nth-child(5) > div article > div + div {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1000px) {
+  body > *:nth-child(5) > div article > div {
+    *zoom: 1;
+  }
+  body > *:nth-child(5) > div article > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  body > *:nth-child(5) > div article > div > *:first-child, body > *:nth-child(5) > div article > div > *:last-child {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  body > *:nth-child(5) > div article > div > *:last-child {
+    float: right;
+  }
+  body > *:nth-child(5) > div article > div > *:first-child {
+    width: 240px;
+  }
+  body > *:nth-child(5) > div article > div > *:last-child {
+    width: calc(100% - 240px);
+  }
+}
+body > *:nth-child(5) > div article > div > *:first-child {
+  background: url('/winchamp/img/fuck4.png');
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  background-size: 100%;
+  position: relative;
+}
+@media screen and (min-width: 1000px) {
+  body > *:nth-child(5) > div article > div > *:first-child {
+    min-height: 200px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div article > div > *:first-child {
+    display: inline-block;
+  }
+}
+body > *:nth-child(5) > div article > div > *:first-child > img {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 25px;
+}
+body > *:nth-child(5) > div article > div > *:last-child {
+  padding-left: 20px;
+}
+body > *:nth-child(5) > div article > div > *:last-child > header {
+  margin-top: 10px;
+  *zoom: 1;
+}
+body > *:nth-child(5) > div article > div > *:last-child > header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+body > *:nth-child(5) > div article > div > *:last-child > header > span {
+  float: left;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  height: 55px;
+  line-height: 38px;
+  font-weight: bold;
+}
+body > *:nth-child(5) > div article > div > *:last-child > header > span:first-child {
+  background-color: #61c2c4;
+}
+body > *:nth-child(5) > div article > div > *:last-child > header > span:last-child {
+  background-color: #7b7c7d;
+  font-size: 29px;
+  margin-left: 2px;
+}
+body > *:nth-child(5) > div article > div > *:last-child > div {
+  margin-top: 20px;
+  line-height: 30px;
+}
+@media screen and (min-width: 1000px) {
+  body > *:nth-child(5) > div article > div > *:last-child > div {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(4) {
+    display: inline-block !important;
+    width: calc(100% - 10px * 2) !important;
+    float: none !important;
+    margin: 10px !important;
+    margin-top: 20px !important;
+  }
+  body > *:nth-child(4) > div {
+    text-align: left;
+  }
+  body > *:nth-child(4) > div a {
+    display: inline-block;
+    color: #fb9950;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0 2px;
+    padding-bottom: 1px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+  }
+  body > *:nth-child(4) > div a.active, body > *:nth-child(4) > div a:hover {
+    color: #fb9950;
+    border-bottom: 1px solid #fb9950;
+  }
+
+  body > *:nth-child(5) > div {
+    display: inline-block !important;
+    width: calc(100% - 10px * 2) !important;
+    float: none !important;
+    margin: 10px !important;
+  }
+}

@@ -1,0 +1,36 @@
+/**
+* @author      OA Wu <comdan66@gmail.com>
+* @copyright   Copyright (c) 2016 OA Wu Design
+*/
+
+@import "_oa";
+
+@media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+  body > *:nth-child(4) {
+
+    display: inline-block !important;
+    width: calc(100% - 10px * 2) !important;
+    float: none !important;
+    margin: 10px !important;
+    margin-top: 20px !important;
+
+    > div {
+      text-align: left;
+      a {
+        @include a(1px, false, rgba(251, 153, 80, 1.00), rgba(251, 153, 80, 1.00));
+      }
+    }
+  }
+
+  body > *:nth-child(5) {
+    margin-bottom: 30px;
+    > div {
+      > * {
+        display: inline-block !important;
+        width: calc(100% - 10px * 2) !important;
+        float: none !important;
+        margin: 10px !important;
+      }
+    }
+  }
+}

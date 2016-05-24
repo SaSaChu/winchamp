@@ -1,0 +1,128 @@
+/**
+* @author      OA Wu <comdan66@gmail.com>
+* @copyright   Copyright (c) 2016 OA Wu Design
+*/
+
+@import "_oa";
+
+body > *:nth-child(4) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  > div {
+    text-align: left;
+    a {
+      @include a(1px, false, rgba(251, 153, 80, 1.00), rgba(251, 153, 80, 1.00));
+    }
+  }
+}
+
+body > *:nth-child(5) {
+  margin-bottom: 30px;
+  > div {
+    background-color: white;
+    @include border-radius(2px);
+    text-align: left;
+    > header {
+      padding: 20px;
+      background: image-url('fuck3.png', false, false);
+
+      @include split-left(32px);
+      @include last {
+        color: white;
+        font-size: 22px;
+        padding-left: 10px;
+        font-weight: bold;
+      };
+    }
+    article {
+      padding: 20px;
+
+      > div {
+        + div {
+          margin-top: 20px;
+        }
+      @media screen and (min-width: $mediaMobileWidth) {
+        @include split-left(240px);
+      }
+        @include first {
+          background: image-url('fuck4.png', false, false);
+          background-repeat: no-repeat;
+          background-position: 50% 10px;
+          background-size: 100%;
+          @media screen and (min-width: $mediaMobileWidth) {
+            min-height: 200px;
+          }
+          position: relative;
+          @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+            display: inline-block;
+          }
+          > img {
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            top: 25px;
+          }
+        };
+        @include last {
+          padding-left: 20px;
+          > header {
+            margin-top: 10px;
+            @include clearfix();
+            > span {
+              float: left;
+              display: inline-block;
+              padding: 10px;
+              color: white;
+              height: 55px;
+              line-height: 38px;
+              font-weight: bold;
+
+              @include is-first {
+                background-color: rgba(97, 194, 196, 1.00);
+              };
+              @include is-last {
+                background-color: rgba(123, 124, 125, 1.00);
+                font-size: 29px;
+                margin-left: 2px;
+              };
+            }
+          }
+          > div {
+            margin-top: 20px;
+            @media screen and (min-width: $mediaMobileWidth) {
+              padding-left: 70px;
+            }
+            line-height: 30px;
+          }
+        };
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+  body > *:nth-child(4) {
+
+    display: inline-block !important;
+    width: calc(100% - 10px * 2) !important;
+    float: none !important;
+    margin: 10px !important;
+    margin-top: 20px !important;
+
+    > div {
+      text-align: left;
+      a {
+        @include a(1px, false, rgba(251, 153, 80, 1.00), rgba(251, 153, 80, 1.00));
+      }
+    }
+  }
+  body > *:nth-child(5) {
+    > div {
+      display: inline-block !important;
+      width: calc(100% - 10px * 2) !important;
+      float: none !important;
+      margin: 10px !important;
+    }
+  }
+}

@@ -218,7 +218,7 @@ body > header {
         @media screen and (min-width: $mediaMobileWidth) {
           &:not(:first-child) {
               border-top: 5px solid transparent;
-            &:hover {
+            &.a, &:hover {
               background-color: rgba(95, 194, 194, 1.00);
               color: white;
               border-top: 5px solid rgba(213, 241, 53, 1.00);

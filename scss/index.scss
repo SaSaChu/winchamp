@@ -97,6 +97,11 @@ body > *:nth-child(5) {
       padding-right: 50px;
       padding-bottom: 83px;
       overflow: hidden;
+      @include is-first {
+        span {
+          color: rgba(241, 113, 130, 1.00);
+        }
+      };
       > * {
         display: inline-block;
         width: 100%;
@@ -111,6 +116,7 @@ body > *:nth-child(5) {
         color: rgba(150, 124, 114, 1.00);
         margin-top: 5px;
         font-size: 15px;
+        font-weight: bold;
       }
       p {
         margin: 0;

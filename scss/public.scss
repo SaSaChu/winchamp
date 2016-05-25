@@ -372,12 +372,12 @@ body > nav {
         &:nth-child(-n + 3) {
           border-top: 0;
         }
-        &:hover {
+        &.a, &:hover {
           background-color: rgba(241, 139, 48, 1.00);
         }
       }
       @media screen and (min-width: $mediaMobileWidth) {
-        &:hover {
+        &.a, &:hover {
           background: image-url('co.png', false, false) !important;
           background-repeat: repeat-x;
         }

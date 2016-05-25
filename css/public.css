@@ -16226,12 +16226,12 @@ body > nav > div a {
   body > nav > div a:nth-child(-n + 3) {
     border-top: 0;
   }
-  body > nav > div a:hover {
+  body > nav > div a.a, body > nav > div a:hover {
     background-color: #f18b30;
   }
 }
 @media screen and (min-width: 1000px) {
-  body > nav > div a:hover {
+  body > nav > div a.a, body > nav > div a:hover {
     background: url('/winchamp/img/co.png') !important;
     background-repeat: repeat-x;
   }

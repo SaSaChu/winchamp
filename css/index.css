@@ -184,6 +184,9 @@ body > *:nth-child(5) > div > div {
   padding-bottom: 83px;
   overflow: hidden;
 }
+body > *:nth-child(5) > div > div:first-child span {
+  color: #f17182;
+}
 body > *:nth-child(5) > div > div > * {
   display: inline-block;
   width: 100%;
@@ -197,6 +200,7 @@ body > *:nth-child(5) > div > div span {
   color: #967c72;
   margin-top: 5px;
   font-size: 15px;
+  font-weight: bold;
 }
 body > *:nth-child(5) > div > div p {
   margin: 0;

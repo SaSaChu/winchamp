@@ -4,15 +4,27 @@
  */
 
 $(function () {
+  window.mainLoading = $('#loading');
+  window.showLoading = function (callback) {
+    this.mainLoading.fadeIn (function () { $(this).removeClass ('hide'); if (callback) callback (); });
+  };
+
+  window.hideLoading = function (callback) {
+    clearTimeout (window.showLoadingTimer); this.mainLoading.addClass ('hide').fadeOut (function () { $(this).hide (function () { if (callback) callback (); }); });
+  };
+
+  window.closeLoading = function (callback) {
+    window.hideLoading (function  () { if (callback) callback (); window.mainLoading.remove (); });
+  };
+
+
   if ($(window).width () < 960) {
     $('header > div > div').click (function () {
       if (!$(this).hasClass ('s')) {
-
       }
       $(this).find ('a').click (function () {
         $(this).addClass ('a').siblings ().removeClass ('a');
         window.location.assign ($(this).attr ('href'));
-        
       });
 
       $(this).toggleClass ('s');
@@ -26,7 +38,7 @@ $(function () {
       $(this).height ($(this).find ('img').height ());
     }.bind ($(this)), 500);
 
-    $(this).find ('a').click (function () {
+    var $a = $(this).find ('a').click (function () {
       if (!$(this).is (':last-child')) {
         var $last = $that.find ('img').last ().clone ();
         $that.find ('img').last ().remove ();
@@ -37,5 +49,12 @@ $(function () {
         $first.insertAfter ($that.find ('img').last ());
       }
     });
+
+    setInterval (function () { $a.first ().click (); }, 6000);
   });
+
+  setTimeout (function () {
+    window.hideLoading ();
+  }, 1000);
+
 });

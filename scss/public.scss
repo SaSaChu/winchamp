@@ -344,11 +344,11 @@ body > nav {
       position: relative;
       display: inline-block;
       @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
-        width: calc(100% / 2);
+        width: calc(100% / 3);
       }
 
       @media screen and (min-width: $mediaMobileWidth) {
-        width: calc(100% / 8);
+        width: calc(100% / 9);
       }
       text-decoration: none;
       padding-top: 5px;
@@ -362,13 +362,13 @@ body > nav {
         border: 1px solid rgba(255, 255, 255, 1.00);
         border: 1px solid rgba(255, 255, 255, 1.00);
         border-bottom: 0;
-        &:nth-child(2n + 1) {
+        &:nth-child(3n + 2), &:nth-child(3n + 1) {
           border-right: 0;
         }
-        &:nth-child(2n) {
+        &:nth-child(3n) {
           border-right: 0;
         }
-        &:nth-child(-n + 2) {
+        &:nth-child(-n + 3) {
           border-top: 0;
         }
         &:hover {
@@ -420,4 +420,13 @@ body > footer {
   background-color: rgba(23, 71, 118, 1.00);
   color: white;
   padding: 20px;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  @include loading();
+  // display: none;
 }

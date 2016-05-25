@@ -91,6 +91,7 @@ body > header {
     @include first {
       @media screen and (min-width: $mediaMobileWidth) {
         text-align: left;
+        padding-top: 13px;
       }
     }
 

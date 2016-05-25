@@ -186,6 +186,7 @@ body > header > div {
 @media screen and (min-width: 1000px) {
   body > header > div > *:first-child {
     text-align: left;
+    padding-top: 13px;
   }
 }
 body > header > div > *:last-child {

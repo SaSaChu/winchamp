@@ -25,7 +25,7 @@ body > *:nth-child(5) {
     text-align: left;
     > header {
       padding: 20px;
-      background: image-url('fuck3.png', false, false);
+      background: image-url('f3.png', false, false);
 
       @include split-left(32px);
       @include last {
@@ -46,7 +46,7 @@ body > *:nth-child(5) {
         @include split-left(240px);
       }
         @include first {
-          background: image-url('fuck4.png', false, false);
+          background: image-url('f4.png', false, false);
           background-repeat: no-repeat;
           background-position: 50% 10px;
           background-size: 100%;
@@ -66,6 +66,8 @@ body > *:nth-child(5) {
         };
         @include last {
           padding-left: 20px;
+          border-bottom: 1px dashed rgba(97, 194, 196, .500);
+          padding-bottom: 50px;
           > header {
             margin-top: 10px;
             @include clearfix();

@@ -83,7 +83,7 @@ body > *:nth-child(5) > div {
 }
 body > *:nth-child(5) > div > header {
   padding: 20px;
-  background: url('/winchamp/img/fuck3.png');
+  background: url('/winchamp/img/f3.png');
   *zoom: 1;
 }
 body > *:nth-child(5) > div > header:after {
@@ -144,7 +144,7 @@ body > *:nth-child(5) > div article > div + div {
   }
 }
 body > *:nth-child(5) > div article > div > *:first-child {
-  background: url('/winchamp/img/fuck4.png');
+  background: url('/winchamp/img/f4.png');
   background-repeat: no-repeat;
   background-position: 50% 10px;
   background-size: 100%;
@@ -168,6 +168,8 @@ body > *:nth-child(5) > div article > div > *:first-child > img {
 }
 body > *:nth-child(5) > div article > div > *:last-child {
   padding-left: 20px;
+  border-bottom: 1px dashed rgba(97, 194, 196, 0.5);
+  padding-bottom: 50px;
 }
 body > *:nth-child(5) > div article > div > *:last-child > header {
   margin-top: 10px;

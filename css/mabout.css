@@ -1,0 +1,87 @@
+/**
+* @author      OA Wu <comdan66@gmail.com>
+* @copyright   Copyright (c) 2016 OA Wu Design
+*/
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(4) {
+    display: inline-block !important;
+    width: calc(100% - 10px * 2) !important;
+    float: none !important;
+    margin: 10px !important;
+    margin-top: 20px !important;
+  }
+  body > *:nth-child(4) > div {
+    text-align: left;
+  }
+  body > *:nth-child(4) > div a {
+    display: inline-block;
+    color: #fb9950;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0 2px;
+    padding-bottom: 1px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+  }
+  body > *:nth-child(4) > div a.active, body > *:nth-child(4) > div a:hover {
+    color: #fb9950;
+    border-bottom: 1px solid #fb9950;
+  }
+
+  body > *:nth-child(5) {
+    margin-bottom: 30px;
+  }
+  body > *:nth-child(5) > div > * {
+    display: inline-block !important;
+    width: calc(100% - 10px * 2) !important;
+    float: none !important;
+    margin: 10px !important;
+  }
+}

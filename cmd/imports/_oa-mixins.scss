@@ -12,6 +12,31 @@
 
 @import "functions/_oa-material";
 
+@mixin first () {
+  > *:first-child {
+    @content;
+  }
+}
+@mixin last () {
+  > *:last-child {
+    @content;
+  }
+}
+@mixin is-first () {
+  &:first-child {
+    @content;
+  }
+}
+@mixin is-last () {
+  &:last-child {
+    @content;
+  }
+}
+@mixin is-n ($n) {
+  &:nth-child(#{$n}) {
+    @content;
+  }
+}
 @mixin font-smoothing ($val: antialiased) {
   -moz-osx-font-smoothing: $val;
    -webkit-font-smoothing: $val;
@@ -44,7 +69,7 @@
     }
   }
 }
-@mixin split ($leftName: '.l', $rightName: '.r') {
+@mixin split ($leftName: '>*:first-child', $rightName: '>*:last-child') {
   @include clearfix();
 
   #{$leftName}, #{$rightName} {
@@ -56,7 +81,7 @@
     float: right;
   }
 }
-@mixin split-left ($leftWidth: 100px, $leftName: '.l', $rightName: '.r') {
+@mixin split-left ($leftWidth: 100px, $leftName: '>*:first-child', $rightName: '>*:last-child') {
   @include split($leftName, $rightName);
 
   #{$leftName} {
@@ -66,7 +91,7 @@
     width: calc(100% - #{$leftWidth});
   }
 }
-@mixin split-right ($rightWidth: 100px, $leftName: '.l', $rightName: '.r') {
+@mixin split-right ($rightWidth: 100px, $leftName: '>*:first-child', $rightName: '>*:last-child') {
   @include split($leftName, $rightName);
 
   #{$leftName} {

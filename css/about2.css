@@ -1,0 +1,186 @@
+/**
+* @author      OA Wu <comdan66@gmail.com>
+* @copyright   Copyright (c) 2016 OA Wu Design
+*/
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+body > *:nth-child(4) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body > *:nth-child(4) > div {
+  text-align: left;
+}
+body > *:nth-child(4) > div a {
+  display: inline-block;
+  color: #fb9950;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0 2px;
+  padding-bottom: 1px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+}
+body > *:nth-child(4) > div a.active, body > *:nth-child(4) > div a:hover {
+  color: #fb9950;
+  border-bottom: 1px solid #fb9950;
+}
+
+body > *:nth-child(5) {
+  margin-bottom: 30px;
+}
+body > *:nth-child(5) > div {
+  *zoom: 1;
+}
+body > *:nth-child(5) > div:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+body > *:nth-child(5) > div > *:first-child, body > *:nth-child(5) > div > *:last-child {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+body > *:nth-child(5) > div > *:last-child {
+  float: right;
+}
+body > *:nth-child(5) > div > *:first-child {
+  width: 240px;
+}
+body > *:nth-child(5) > div > *:last-child {
+  width: calc(100% - 240px);
+}
+body > *:nth-child(5) > div > *:first-child {
+  border-bottom: 3px solid #5fc2c2;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+body > *:nth-child(5) > div > *:first-child > * {
+  display: inline-block;
+  width: 100%;
+}
+body > *:nth-child(5) > div > *:first-child span {
+  padding: 15px;
+  background-color: #5fc2c2;
+  color: white;
+}
+body > *:nth-child(5) > div > *:first-child a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: white;
+  color: #373737;
+  text-align: left;
+}
+body > *:nth-child(5) > div > *:first-child a.a {
+  color: #97795e;
+  font-weight: bold;
+}
+body > *:nth-child(5) > div > *:first-child a + a {
+  border-top: 1px solid rgba(39, 40, 34, 0.3);
+}
+body > *:nth-child(5) > div > *:last-child {
+  width: calc(100% - 260px);
+  text-align: left;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 25px;
+  border: 3px solid #d3d4d5;
+  border-left: 0;
+  border-right: 0;
+  background: #feffff url('/winchamp/img/aboutbg.png');
+}
+body > *:nth-child(5) > div > *:last-child header {
+  border-left: 3px solid #cfed22;
+  padding-left: 20px;
+  font-size: 25px;
+  color: #8f665b;
+  font-weight: bold;
+}
+body > *:nth-child(5) > div > *:last-child span {
+  display: inline-block;
+  width: 100%;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+body > *:nth-child(5) > div > *:last-child div {
+  color: #e3737b;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+body > *:nth-child(5) > div > *:last-child div:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+}
+body > *:nth-child(5) > div > *:last-child div:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 50%;
+  display: inline-block;
+  height: 1px;
+  background-color: #eca2a8;
+  z-index: -2;
+}

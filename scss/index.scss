@@ -1,0 +1,409 @@
+/**
+* @author      OA Wu <comdan66@gmail.com>
+* @copyright   Copyright (c) 2016 OA Wu Design
+*/
+
+@import "_oa";
+
+body > *:nth-child(4) {
+@media screen and (min-width: $mediaMobileWidth) {
+  height: 200px;
+}
+padding-top: 50px;
+
+> div {
+  position: relative;
+  background: image-url('talkbg.png', false, false);
+  height: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+  @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+    @include split-left(30% );
+  }
+  @media screen and (min-width: $mediaMobileWidth) {
+    @include split-left(200px);
+  }
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(39, 40, 34, .100);
+  }
+  @include first {
+    @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+      img {
+        width: 100%;
+      }
+    }
+    // border: 1px solid rgba(255, 0, 0, .3);
+  };
+  @include last {
+    // border: 1px solid rgba(255, 0, 0, .3);
+    text-align: left;
+    padding-left: 30px;
+
+    > * {
+      display: inline-block;
+      width: 100%;
+    }
+    span {
+      color: rgba(66, 84, 80, 1.00);
+      // border: 1px solid rgba(255, 0, 0, .3);
+      // margin-top: 10px;
+    }
+    h1 {
+      color: rgba(241, 113, 130, 1.00);
+      margin: 0;
+      margin-top: 15px;
+    }
+    p {
+      color: rgba(106, 71, 57, 1.00);
+      margin: 0;
+      margin-top: 8px;
+
+      line-height: 25px;
+      @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+        margin-bottom: 20px;
+      }
+    }
+  };
+}
+}
+
+body > *:nth-child(5) {
+  @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+    display: none;
+  }
+  height: 325px;
+  > div {
+    height: 100%;
+    margin-top: 30px;
+    @include clearfix();
+
+    > div {
+      float: left;
+      display: inline-block;
+      width: calc(100% / 3);
+      height: 300px;
+
+      background-image: image-url('photpic.png', false, false);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      padding: 40px;
+      padding-right: 50px;
+      padding-bottom: 83px;
+      overflow: hidden;
+      > * {
+        display: inline-block;
+        width: 100%;
+
+      }
+      h2 {
+        margin: 0;
+        font-size: 20px;
+        color: rgba(87, 187, 189, 1.00);
+      }
+      span {
+        color: rgba(150, 124, 114, 1.00);
+        margin-top: 5px;
+        font-size: 15px;
+      }
+      p {
+        margin: 0;
+        margin-top: 10px;
+        height: 120px;
+        line-height: 16px;
+        overflow: hidden;
+        font-size: 13px;
+        color: rgba(89, 89, 89, 1.00);
+        text-align: left;
+      }
+    }
+  }
+}
+body > *:nth-child(6) {
+@media screen and (min-width: $mediaMobileWidth) {
+  height: 800px;
+}
+  margin-top: 30px;
+
+  > div {
+    height: 100%;
+    @media screen and (min-width: $mediaMobileWidth) {
+      @include split-left(360px);
+    }
+    > div {
+      height: 100%;
+      @include is-first {
+        position: relative;
+        @media screen and (min-width: $mediaMobileWidth) {
+          padding-right: 15px;
+        }
+        > img {
+          @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+            width: 100%;
+          }
+        }
+        @media screen and (min-width: $mediaMobileWidth) {
+
+          &:after, &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inline-block;
+            width: 1px;
+            height: 100%;
+            border-right: 1px solid rgba(255, 255, 255, 1);
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            right: 1px;
+            top: 0;
+            display: inline-block;
+            width: 1px;
+            height: 100%;
+            border-right: 1px solid rgba(39, 40, 34, .100);
+          }
+        }
+        > div {
+          padding: 5px;
+
+          a {
+            display: block;
+            width: 190px;
+            height: 36px;
+            // border: 1px solid rgba(255, 0, 0, .3);
+            margin: 0 auto;
+            margin-top: 20px;
+            color: white;
+            background-color: rgba(54, 100, 140, 1.00);
+            padding: 5px;
+            background-image: image-url('btnmore.png', false, false);
+            &:hover {
+              background-image: image-url('btnmore_o.png', false, false);
+            }
+          }
+          section {
+            @media screen and (min-width: $mediaMobileWidth) {
+              text-align: left;
+            }
+            padding: 10px;
+            padding-left: 30px;
+            position: relative;
+            @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+              max-width: 350px;
+              margin: 0 auto;
+            }
+            img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+
+            }
+
+            h3 {
+              display: inline-block;
+              width: 100%;
+              color: rgba(157, 134, 125, 1.00);
+              margin: 0;
+              font-size: 15px;
+              font-weight: bold;
+              text-align: left;
+            }
+            time {
+              display: inline-block;
+              width: 100%;
+              font-size: 13px;
+              margin-top: 7px;
+              text-align: left;
+            }
+            + section {
+
+              &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 30px;
+                display: inline-block;
+                width: calc(100% - 30px);
+                height: 1px;
+                border-top: 1px dashed rgba(98, 195, 203, 1.00);
+              }
+            }
+          }
+        }
+      }
+      @include is-last {
+        text-align: center;
+        // border: 1px solid rgba(255, 0, 0, .3);
+        @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+          display: none;
+        }
+        img {
+          + img {
+            margin-top: 20px;
+          }
+          // border: 1px solid rgba(255, 0, 0, .3);
+        }
+      }
+    }
+  }
+}
+
+body > *:nth-child(7) {
+  background: image-url('contbg.png', false, false);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 30px;
+  @media screen and (min-width: $mediaMobileWidth) {
+    height: 425px;
+  }
+
+  > div {
+    text-align: left;
+    h2 {
+      font-size: 25px;
+      color: rgba(230, 229, 72, 1.00);
+      @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+        margin: 0;
+        margin-top: 5px;
+        padding: 0 10px;
+      }
+    }
+    p {
+      color: white;
+      @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+        color: rgba(159, 136, 128, 1.00);
+        padding: 0 10px;
+      }
+    }
+    div {
+      @include clearfix();
+      section {
+        float: left;
+        display: inline-block;
+        @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+          width: calc(100% - 20px);
+          margin: 10px;
+          border: 1px solid rgba(39, 40, 34, .200);
+          @include border-radius(2px);
+          overflow: hidden;
+          
+          + section {
+            margin-top: 10px;
+          }
+        }
+        @media screen and (min-width: $mediaMobileWidth) {
+          width: calc((100% - 20px * 2) / 3);
+        }
+        background: white;
+
+        &:not(:first-child):not(:last-child) {
+          @media screen and (min-width: $mediaMobileWidth) {
+            margin: 0 20px;
+          }
+        }
+
+        h3 {
+          background-color: rgba(95, 194, 194, 1.00);
+          color: white;
+          margin: 0;
+          height: 64px;
+          text-align: center;
+          font-size: 30px;
+          line-height: 60px;
+          margin-bottom: 10px;
+        }
+        span {
+          display: inline-block;
+          width: 100%;
+          padding: 5px 20px;
+          padding-left: 50px;
+          color: rgba(19, 72, 102, 1.00);
+
+          background: white image-url('indexicon.png', false, false);
+          background-repeat: no-repeat;
+          background-position: 20px 50%;
+
+          + span {
+            background: white image-url('indexicon2.png', false, false);
+            background-repeat: no-repeat;
+            background-position: 20px 50%;
+          }
+        }
+        iframe {
+          width: 100%;
+          margin-top: 10px;
+          height: 155px;
+        }
+      }
+    }
+  }
+}
+body > *:nth-child(8) {
+  background-color: white;
+  > div {
+    @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+      padding: 0 10px;
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      color: rgba(70, 71, 72, 1.00);
+
+      text-align: left;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+    }
+    > div {
+      @media screen and (min-width: $mediaMobileWidth) {
+        @include split-right(50%);
+      }
+      > div {
+        input {
+          @include input;
+          width: 100%;
+          + input {
+            margin-top: 20px;
+          }
+        }
+        textarea {
+          @include textarea;
+          height: 185px;
+          width: 100%;
+          @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+            margin-top: 20px;
+          }
+        }
+        @include is-first {
+          @media screen and (min-width: $mediaMobileWidth) {
+            padding-right: 20px;
+          }
+        }
+        @include is-last {
+          @media screen and (min-width: $mediaMobileWidth) {
+            padding-left: 20px;
+          }
+        };
+      }
+    }
+    a {
+      display: inline-block;
+      width: 200px;
+      padding: 10px;
+      color: rgba(254, 255, 255, 1.00);
+      margin-top: 50px;
+      margin-bottom: 50px;
+      background-color: rgba(102, 152, 203, 1.00);
+      cursor: pointer;
+      @include border-radius(3px);
+    }
+  }
+}

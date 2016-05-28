@@ -180,7 +180,7 @@ body > *:nth-child(6) {
         > div {
           padding: 5px;
 
-          a {
+          > a {
             display: block;
             width: 190px;
             height: 36px;
@@ -212,15 +212,20 @@ body > *:nth-child(6) {
               top: 10px;
 
             }
-
-            h3 {
+            a {
               display: inline-block;
               width: 100%;
-              color: rgba(157, 134, 125, 1.00);
-              margin: 0;
-              font-size: 15px;
-              font-weight: bold;
-              text-align: left;
+
+                
+              h3 {
+                display: inline-block;
+                width: 100%;
+                color: rgba(157, 134, 125, 1.00);
+                margin: 0;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: left;
+              }
             }
             time {
               display: inline-block;
@@ -267,6 +272,9 @@ body > *:nth-child(7) {
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 30px;
+  @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+    background-size: 100% 115px;
+  }
   @media screen and (min-width: $mediaMobileWidth) {
     height: 425px;
   }
@@ -352,7 +360,7 @@ body > *:nth-child(7) {
     }
   }
 }
-body > *:nth-child(8) {
+body > form {
   background-color: white;
   > div {
     @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {

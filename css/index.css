@@ -290,7 +290,7 @@ body > *:nth-child(6) > div > div:first-child {
 body > *:nth-child(6) > div > div:first-child > div {
   padding: 5px;
 }
-body > *:nth-child(6) > div > div:first-child > div a {
+body > *:nth-child(6) > div > div:first-child > div > a {
   display: block;
   width: 190px;
   height: 36px;
@@ -301,7 +301,7 @@ body > *:nth-child(6) > div > div:first-child > div a {
   padding: 5px;
   background-image: url('/winchamp/img/btnmore.png');
 }
-body > *:nth-child(6) > div > div:first-child > div a:hover {
+body > *:nth-child(6) > div > div:first-child > div > a:hover {
   background-image: url('/winchamp/img/btnmore_o.png');
 }
 body > *:nth-child(6) > div > div:first-child > div section {
@@ -325,7 +325,11 @@ body > *:nth-child(6) > div > div:first-child > div section img {
   left: 0;
   top: 10px;
 }
-body > *:nth-child(6) > div > div:first-child > div section h3 {
+body > *:nth-child(6) > div > div:first-child > div section a {
+  display: inline-block;
+  width: 100%;
+}
+body > *:nth-child(6) > div > div:first-child > div section a h3 {
   display: inline-block;
   width: 100%;
   color: #9d867d;
@@ -368,6 +372,11 @@ body > *:nth-child(7) {
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 30px;
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(7) {
+    background-size: 100% 115px;
+  }
 }
 @media screen and (min-width: 1000px) {
   body > *:nth-child(7) {
@@ -466,15 +475,15 @@ body > *:nth-child(7) > div div section iframe {
   height: 155px;
 }
 
-body > *:nth-child(8) {
+body > form {
   background-color: white;
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
-  body > *:nth-child(8) > div {
+  body > form > div {
     padding: 0 10px;
   }
 }
-body > *:nth-child(8) > div span {
+body > form > div span {
   display: inline-block;
   width: 100%;
   color: #464748;
@@ -483,31 +492,31 @@ body > *:nth-child(8) > div span {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1000px) {
-  body > *:nth-child(8) > div > div {
+  body > form > div > div {
     *zoom: 1;
   }
-  body > *:nth-child(8) > div > div:after {
+  body > form > div > div:after {
     display: table;
     content: "";
     line-height: 0;
     clear: both;
   }
-  body > *:nth-child(8) > div > div > *:first-child, body > *:nth-child(8) > div > div > *:last-child {
+  body > form > div > div > *:first-child, body > form > div > div > *:last-child {
     float: left;
     position: relative;
     display: inline-block;
   }
-  body > *:nth-child(8) > div > div > *:last-child {
+  body > form > div > div > *:last-child {
     float: right;
   }
-  body > *:nth-child(8) > div > div > *:first-child {
+  body > form > div > div > *:first-child {
     width: calc(100% - 50%);
   }
-  body > *:nth-child(8) > div > div > *:last-child {
+  body > form > div > div > *:last-child {
     width: 50%;
   }
 }
-body > *:nth-child(8) > div > div > div input {
+body > form > div > div > div input {
   width: 250px;
   padding: 5px;
   border: 1px solid rgba(39, 40, 34, 0.25);
@@ -522,30 +531,30 @@ body > *:nth-child(8) > div > div > div input {
   transition: all 0.3s;
   width: 100%;
 }
-body > *:nth-child(8) > div > div > div input[readonly] {
+body > form > div > div > div input[readonly] {
   background-color: #f0f0f0;
 }
-body > *:nth-child(8) > div > div > div input[readonly]:focus {
+body > form > div > div > div input[readonly]:focus {
   outline: 0;
   border: 1px solid rgba(39, 40, 34, 0.25);
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-body > *:nth-child(8) > div > div > div input:focus {
+body > form > div > div > div input:focus {
   outline: 0;
   border: 1px solid #66afe9;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-body > *:nth-child(8) > div > div > div input[type="file"] {
+body > form > div > div > div input[type="file"] {
   font-size: 14px;
 }
-body > *:nth-child(8) > div > div > div input + input {
+body > form > div > div > div input + input {
   margin-top: 20px;
 }
-body > *:nth-child(8) > div > div > div textarea {
+body > form > div > div > div textarea {
   width: 250px;
   height: 80px;
   padding: 5px;
@@ -563,7 +572,7 @@ body > *:nth-child(8) > div > div > div textarea {
   height: 185px;
   width: 100%;
 }
-body > *:nth-child(8) > div > div > div textarea:focus {
+body > form > div > div > div textarea:focus {
   outline: 0;
   border: 1px solid #66afe9;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -571,21 +580,21 @@ body > *:nth-child(8) > div > div > div textarea:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
-  body > *:nth-child(8) > div > div > div textarea {
+  body > form > div > div > div textarea {
     margin-top: 20px;
   }
 }
 @media screen and (min-width: 1000px) {
-  body > *:nth-child(8) > div > div > div:first-child {
+  body > form > div > div > div:first-child {
     padding-right: 20px;
   }
 }
 @media screen and (min-width: 1000px) {
-  body > *:nth-child(8) > div > div > div:last-child {
+  body > form > div > div > div:last-child {
     padding-left: 20px;
   }
 }
-body > *:nth-child(8) > div a {
+body > form > div a {
   display: inline-block;
   width: 200px;
   padding: 10px;

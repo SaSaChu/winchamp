@@ -55,18 +55,22 @@ padding-top: 50px;
       // margin-top: 10px;
     }
     h1 {
-      color: rgba(241, 113, 130, 1.00);
-      margin: 0;
-      margin-top: 15px;
+      &, span {
+        color: rgba(241, 113, 130, 1.00) !important;
+        margin: 0 !important;
+        margin-top: 15px !important; 
+      }
     }
     p {
-      color: rgba(106, 71, 57, 1.00);
-      margin: 0;
-      margin-top: 8px;
+      &, span {
+        color: rgba(106, 71, 57, 1.00) !important; 
+        margin: 0 !important; 
+        margin-top: 8px !important; 
 
-      line-height: 25px;
-      @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
-        margin-bottom: 20px;
+        line-height: 25px !important; 
+        @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+          margin-bottom: 20px !important; 
+        }
       }
     }
   };
@@ -108,9 +112,11 @@ body > *:nth-child(5) {
 
       }
       h2 {
-        margin: 0;
-        font-size: 20px;
-        color: rgba(87, 187, 189, 1.00);
+        &, span {
+          margin: 0 !important;
+          font-size: 20px !important;
+          color: rgba(87, 187, 189, 1.00) !important;
+        }
       }
       span {
         color: rgba(150, 124, 114, 1.00);
@@ -119,14 +125,16 @@ body > *:nth-child(5) {
         font-weight: bold;
       }
       p {
-        margin: 0;
-        margin-top: 10px;
-        height: 120px;
-        line-height: 16px;
-        overflow: hidden;
-        font-size: 13px;
-        color: rgba(89, 89, 89, 1.00);
-        text-align: left;
+        &, span {
+          margin: 0 !important;
+          margin-top: 10px !important;
+          height: 120px !important;
+          line-height: 16px !important;
+          overflow: hidden !important;
+          font-size: 13px !important;
+          color: rgba(89, 89, 89, 1.00) !important;
+          text-align: left !important;
+        }
       }
     }
   }
@@ -314,13 +322,15 @@ body > *:nth-child(7) {
           }
         }
         @media screen and (min-width: $mediaMobileWidth) {
-          width: calc((100% - 20px * 2) / 3);
+          width: calc((100% - 20px * 3) / 4);
         }
         background: white;
 
-        &:not(:first-child):not(:last-child) {
+        // &:not(:first-child):not(:last-child) {
+        + section {
           @media screen and (min-width: $mediaMobileWidth) {
-            margin: 0 20px;
+            // margin: 0 20px;
+            margin-left: 20px;
           }
         }
 
@@ -381,6 +391,10 @@ body > form {
         @include split-right(50%);
       }
       > div {
+        text-align: left;
+        img {
+          margin-top: 15px;
+        }
         input {
           @include input;
           width: 100%;
@@ -390,7 +404,7 @@ body > form {
         }
         textarea {
           @include textarea;
-          height: 185px;
+          height: 250px;
           width: 100%;
           @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
             margin-top: 20px;
@@ -408,7 +422,7 @@ body > form {
         };
       }
     }
-    a {
+    input[type='submit'] {
       display: inline-block;
       width: 200px;
       padding: 10px;

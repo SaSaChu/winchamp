@@ -56,7 +56,7 @@ body > *:nth-child(4) {
 }
 body > *:nth-child(4) > div {
   position: relative;
-  background: url('/winchamp/img/talkbg.png');
+  background: url('../img/talkbg.png');
   height: 100%;
   border-bottom: 1px solid white;
 }
@@ -135,20 +135,20 @@ body > *:nth-child(4) > div > *:last-child > * {
 body > *:nth-child(4) > div > *:last-child span {
   color: #425450;
 }
-body > *:nth-child(4) > div > *:last-child h1 {
-  color: #f17182;
-  margin: 0;
-  margin-top: 15px;
+body > *:nth-child(4) > div > *:last-child h1, body > *:nth-child(4) > div > *:last-child h1 span {
+  color: #f17182 !important;
+  margin: 0 !important;
+  margin-top: 15px !important;
 }
-body > *:nth-child(4) > div > *:last-child p {
-  color: #6a4739;
-  margin: 0;
-  margin-top: 8px;
-  line-height: 25px;
+body > *:nth-child(4) > div > *:last-child p, body > *:nth-child(4) > div > *:last-child p span {
+  color: #6a4739 !important;
+  margin: 0 !important;
+  margin-top: 8px !important;
+  line-height: 25px !important;
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
-  body > *:nth-child(4) > div > *:last-child p {
-    margin-bottom: 20px;
+  body > *:nth-child(4) > div > *:last-child p, body > *:nth-child(4) > div > *:last-child p span {
+    margin-bottom: 20px !important;
   }
 }
 
@@ -176,7 +176,7 @@ body > *:nth-child(5) > div > div {
   display: inline-block;
   width: calc(100% / 3);
   height: 300px;
-  background-image: url('/winchamp/img/photpic.png');
+  background-image: url('../img/photpic.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 40px;
@@ -191,10 +191,10 @@ body > *:nth-child(5) > div > div > * {
   display: inline-block;
   width: 100%;
 }
-body > *:nth-child(5) > div > div h2 {
-  margin: 0;
-  font-size: 20px;
-  color: #57bbbd;
+body > *:nth-child(5) > div > div h2, body > *:nth-child(5) > div > div h2 span {
+  margin: 0 !important;
+  font-size: 20px !important;
+  color: #57bbbd !important;
 }
 body > *:nth-child(5) > div > div span {
   color: #967c72;
@@ -202,15 +202,15 @@ body > *:nth-child(5) > div > div span {
   font-size: 15px;
   font-weight: bold;
 }
-body > *:nth-child(5) > div > div p {
-  margin: 0;
-  margin-top: 10px;
-  height: 120px;
-  line-height: 16px;
-  overflow: hidden;
-  font-size: 13px;
-  color: #595959;
-  text-align: left;
+body > *:nth-child(5) > div > div p, body > *:nth-child(5) > div > div p span {
+  margin: 0 !important;
+  margin-top: 10px !important;
+  height: 120px !important;
+  line-height: 16px !important;
+  overflow: hidden !important;
+  font-size: 13px !important;
+  color: #595959 !important;
+  text-align: left !important;
 }
 
 body > *:nth-child(6) {
@@ -299,10 +299,10 @@ body > *:nth-child(6) > div > div:first-child > div > a {
   color: white;
   background-color: #36648c;
   padding: 5px;
-  background-image: url('/winchamp/img/btnmore.png');
+  background-image: url('../img/btnmore.png');
 }
 body > *:nth-child(6) > div > div:first-child > div > a:hover {
-  background-image: url('/winchamp/img/btnmore_o.png');
+  background-image: url('../img/btnmore_o.png');
 }
 body > *:nth-child(6) > div > div:first-child > div section {
   padding: 10px;
@@ -368,7 +368,7 @@ body > *:nth-child(6) > div > div:last-child img + img {
 }
 
 body > *:nth-child(7) {
-  background: url('/winchamp/img/contbg.png');
+  background: url('../img/contbg.png');
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 30px;
@@ -436,12 +436,12 @@ body > *:nth-child(7) > div div section {
 }
 @media screen and (min-width: 1000px) {
   body > *:nth-child(7) > div div section {
-    width: calc((100% - 20px * 2) / 3);
+    width: calc((100% - 20px * 3) / 4);
   }
 }
 @media screen and (min-width: 1000px) {
-  body > *:nth-child(7) > div div section:not(:first-child):not(:last-child) {
-    margin: 0 20px;
+  body > *:nth-child(7) > div div section + section {
+    margin-left: 20px;
   }
 }
 body > *:nth-child(7) > div div section h3 {
@@ -460,12 +460,12 @@ body > *:nth-child(7) > div div section span {
   padding: 5px 20px;
   padding-left: 50px;
   color: #134866;
-  background: white url('/winchamp/img/indexicon.png');
+  background: white url('../img/indexicon.png');
   background-repeat: no-repeat;
   background-position: 20px 50%;
 }
 body > *:nth-child(7) > div div section span + span {
-  background: white url('/winchamp/img/indexicon2.png');
+  background: white url('../img/indexicon2.png');
   background-repeat: no-repeat;
   background-position: 20px 50%;
 }
@@ -515,6 +515,12 @@ body > form > div span {
   body > form > div > div > *:last-child {
     width: 50%;
   }
+}
+body > form > div > div > div {
+  text-align: left;
+}
+body > form > div > div > div img {
+  margin-top: 15px;
 }
 body > form > div > div > div input {
   width: 250px;
@@ -569,7 +575,7 @@ body > form > div > div > div textarea {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  height: 185px;
+  height: 250px;
   width: 100%;
 }
 body > form > div > div > div textarea:focus {
@@ -594,7 +600,7 @@ body > form > div > div > div textarea:focus {
     padding-left: 20px;
   }
 }
-body > form > div a {
+body > form > div input[type='submit'] {
   display: inline-block;
   width: 200px;
   padding: 10px;

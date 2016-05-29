@@ -210,7 +210,7 @@ body > header {
             font-weight: bold;
             margin-top: 35px;
             @include border-radius(50%);
-            
+
             span {
               display: none;
             }
@@ -235,7 +235,7 @@ body > header {
                 width: 1px;
                 height: calc(100% - 40px * 2);
                 background-color: rgba(39, 40, 34, .500);
-              }  
+              }
             }
           }
         }
@@ -292,7 +292,7 @@ body > *:nth-child(2) {
     height: 100%;
     // border: 1px solid rgba(255, 0, 0, .3);
     overflow: hidden;
-    
+
     div {
       display: inline-block;
       position: relative;
@@ -307,7 +307,7 @@ body > *:nth-child(2) {
       @for $i from 1 through 100 {
         &.n#{$i} {
           width: calc(100% * #{$i});
-              
+
           img {
             width: calc(100% / #{$i});
 
@@ -398,7 +398,7 @@ body > nav {
             width: 1px;
             height: calc(100% - 5px);
             background-color: rgba(39, 40, 34, .300);
-            
+
           }
           &:after {
             content: '';
@@ -414,13 +414,22 @@ body > nav {
         }
       }
     }
-  }  
+  }
 }
 
 body > footer {
   background-color: rgba(23, 71, 118, 1.00);
   color: white;
   padding: 20px;
+
+  > a {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+      color: rgba(95, 194, 194, 1.00);
+    }
+  }
 }
 
 #loading {

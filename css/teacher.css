@@ -83,7 +83,7 @@ body > *:nth-child(5) > div {
 }
 body > *:nth-child(5) > div > header {
   padding: 20px;
-  background: url('/winchamp/img/f3.png');
+  background: url('../img/f3.png');
   *zoom: 1;
 }
 body > *:nth-child(5) > div > header:after {
@@ -144,7 +144,7 @@ body > *:nth-child(5) > div article > div + div {
   }
 }
 body > *:nth-child(5) > div article > div > *:first-child {
-  background: url('/winchamp/img/f4.png');
+  background: url('../img/f4.png');
   background-repeat: no-repeat;
   background-position: 50% 10px;
   background-size: 100%;
@@ -157,7 +157,7 @@ body > *:nth-child(5) > div article > div > *:first-child {
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
   body > *:nth-child(5) > div article > div > *:first-child {
-    display: inline-block;
+    display: none;
   }
 }
 body > *:nth-child(5) > div article > div > *:first-child > img {
@@ -190,6 +190,11 @@ body > *:nth-child(5) > div article > div > *:last-child > header > span {
   line-height: 38px;
   font-weight: bold;
 }
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div article > div > *:last-child > header > span {
+    height: auto;
+  }
+}
 body > *:nth-child(5) > div article > div > *:last-child > header > span:first-child {
   background-color: #61c2c4;
 }
@@ -197,6 +202,11 @@ body > *:nth-child(5) > div article > div > *:last-child > header > span:last-ch
   background-color: #7b7c7d;
   font-size: 29px;
   margin-left: 2px;
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div article > div > *:last-child > header > span:last-child {
+    margin-left: 0;
+  }
 }
 body > *:nth-child(5) > div article > div > *:last-child > div {
   margin-top: 20px;

@@ -338,7 +338,6 @@ body > nav {
   width: 100%;
 
   > div {
-    height: 100%;
     @include clearfix();
     a {
       float: left;

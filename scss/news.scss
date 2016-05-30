@@ -90,6 +90,11 @@ body > *:nth-child(5) {
           th {
             padding-bottom: 5px;
             border-bottom: 1px solid rgba(224, 227, 237, 1.00);
+            @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+              @include is-first {
+                display: none;
+              }
+            }
           }
         }
       }
@@ -103,6 +108,11 @@ body > *:nth-child(5) {
               color: rgba(29, 30, 237, 1.00);
               font-weight: bold;
             };
+            @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+              @include is-first {
+                display: none;
+              }
+            }
             @include is-n (2) {
               text-align: left;
               &:before {
@@ -113,10 +123,16 @@ body > *:nth-child(5) {
               a {
                 @include a(0, false, rgba(126, 132, 141, 1.00), rgba(126, 132, 141, 1.00));
                 text-decoration: underline;
+                @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+                  display: inline;
+                }
               }
             };
             @include is-last {
               width: 150px;
+              @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+                width: 120px;
+              }
               color: rgba(176, 108, 61, 1.00);
             };
           }

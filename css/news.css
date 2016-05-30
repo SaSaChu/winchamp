@@ -170,6 +170,11 @@ body > *:nth-child(5) > div table thead tr th {
   padding-bottom: 5px;
   border-bottom: 1px solid #e0e3ed;
 }
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div table thead tr th:first-child {
+    display: none;
+  }
+}
 body > *:nth-child(5) > div table tbody tr td {
   border-bottom: 1px dashed #e0e3ed;
   padding: 10px;
@@ -178,6 +183,11 @@ body > *:nth-child(5) > div table tbody tr td:first-child {
   width: 100px;
   color: #1d1eed;
   font-weight: bold;
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div table tbody tr td:first-child {
+    display: none;
+  }
 }
 body > *:nth-child(5) > div table tbody tr td:nth-child(2) {
   text-align: left;
@@ -203,9 +213,19 @@ body > *:nth-child(5) > div table tbody tr td:nth-child(2) a {
 body > *:nth-child(5) > div table tbody tr td:nth-child(2) a.active, body > *:nth-child(5) > div table tbody tr td:nth-child(2) a:hover {
   color: #7e848d;
 }
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div table tbody tr td:nth-child(2) a {
+    display: inline;
+  }
+}
 body > *:nth-child(5) > div table tbody tr td:last-child {
   width: 150px;
   color: #b06c3d;
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div table tbody tr td:last-child {
+    width: 120px;
+  }
 }
 body > *:nth-child(5) > div table tbody tr:nth-child(2n + 1) {
   background-color: #f3f8fd;

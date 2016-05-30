@@ -14,7 +14,6 @@ padding-top: 50px;
 > div {
   position: relative;
   background: image-url('talkbg.png', false, false);
-  height: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
 
   @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
@@ -146,12 +145,11 @@ body > *:nth-child(6) {
   margin-top: 30px;
 
   > div {
-    height: 100%;
     @media screen and (min-width: $mediaMobileWidth) {
       @include split-left(360px);
     }
     > div {
-      height: 100%;
+      
       @include is-first {
         position: relative;
         @media screen and (min-width: $mediaMobileWidth) {
@@ -401,6 +399,9 @@ body > form {
           + input {
             margin-top: 20px;
           }
+          @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+            border: 1px solid rgba(39, 40, 34, .300) !important;
+          }
         }
         textarea {
           @include textarea;
@@ -408,6 +409,7 @@ body > form {
           width: 100%;
           @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
             margin-top: 20px;
+            border: 1px solid rgba(39, 40, 34, .300) !important;
           }
         }
         @include is-first {

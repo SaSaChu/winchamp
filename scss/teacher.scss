@@ -55,7 +55,7 @@ body > *:nth-child(5) {
           }
           position: relative;
           @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
-            display: inline-block;
+            display: none;
           }
           > img {
             width: 80%;
@@ -79,7 +79,9 @@ body > *:nth-child(5) {
               height: 55px;
               line-height: 38px;
               font-weight: bold;
-
+              @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+                height: auto;
+              }
               @include is-first {
                 background-color: rgba(97, 194, 196, 1.00);
               };
@@ -87,6 +89,9 @@ body > *:nth-child(5) {
                 background-color: rgba(123, 124, 125, 1.00);
                 font-size: 29px;
                 margin-left: 2px;
+                @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
+                  margin-left: 0;
+                }
               };
             }
           }

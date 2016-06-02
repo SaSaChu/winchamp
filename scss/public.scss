@@ -339,6 +339,9 @@ body > nav {
 
   > div {
     @include clearfix();
+    @media screen and (min-width: $mediaMobileWidth) {
+      height: 100%;
+    }
     a {
       float: left;
       position: relative;

@@ -16188,6 +16188,11 @@ body > nav > div:after {
   line-height: 0;
   clear: both;
 }
+@media screen and (min-width: 1000px) {
+  body > nav > div {
+    height: 100%;
+  }
+}
 body > nav > div a {
   float: left;
   position: relative;

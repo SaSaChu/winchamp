@@ -200,6 +200,7 @@ body > *:nth-child(5) > div > div span {
   margin-top: 5px;
   font-size: 15px;
   font-weight: bold;
+  color: #f17182;
 }
 body > *:nth-child(5) > div > div p, body > *:nth-child(5) > div > div p span {
   margin: 0 !important;
@@ -207,7 +208,7 @@ body > *:nth-child(5) > div > div p, body > *:nth-child(5) > div > div p span {
   height: 120px !important;
   line-height: 16px !important;
   overflow: hidden !important;
-  font-size: 13px !important;
+  font-size: 10px !important;
   color: #595959 !important;
   text-align: left !important;
 }

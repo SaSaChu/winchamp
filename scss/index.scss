@@ -57,18 +57,18 @@ padding-top: 50px;
       &, span {
         color: rgba(241, 113, 130, 1.00) !important;
         margin: 0 !important;
-        margin-top: 15px !important; 
+        margin-top: 15px !important;
       }
     }
     p {
       &, span {
-        color: rgba(106, 71, 57, 1.00) !important; 
-        margin: 0 !important; 
-        margin-top: 8px !important; 
+        color: rgba(106, 71, 57, 1.00) !important;
+        margin: 0 !important;
+        margin-top: 8px !important;
 
-        line-height: 25px !important; 
+        line-height: 25px !important;
         @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
-          margin-bottom: 20px !important; 
+          margin-bottom: 20px !important;
         }
       }
     }
@@ -150,7 +150,7 @@ body > *:nth-child(6) {
       @include split-left(360px);
     }
     > div {
-      
+
       @include is-first {
         position: relative;
         @media screen and (min-width: $mediaMobileWidth) {

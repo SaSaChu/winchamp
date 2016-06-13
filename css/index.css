@@ -56,7 +56,7 @@ body > *:nth-child(4) {
 }
 body > *:nth-child(4) > div {
   position: relative;
-  background: url('../img/talkbg.png');
+  background: url('/winchamp/img/talkbg.png');
   border-bottom: 1px solid white;
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
@@ -175,7 +175,7 @@ body > *:nth-child(5) > div > div {
   display: inline-block;
   width: calc(100% / 3);
   height: 300px;
-  background-image: url('../img/photpic.png');
+  background-image: url('/winchamp/img/photpic.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 40px;
@@ -293,10 +293,10 @@ body > *:nth-child(6) > div > div:first-child > div > a {
   color: white;
   background-color: #36648c;
   padding: 5px;
-  background-image: url('../img/btnmore.png');
+  background-image: url('/winchamp/img/btnmore.png');
 }
 body > *:nth-child(6) > div > div:first-child > div > a:hover {
-  background-image: url('../img/btnmore_o.png');
+  background-image: url('/winchamp/img/btnmore_o.png');
 }
 body > *:nth-child(6) > div > div:first-child > div section {
   padding: 10px;
@@ -362,7 +362,7 @@ body > *:nth-child(6) > div > div:last-child img + img {
 }
 
 body > *:nth-child(7) {
-  background: url('../img/contbg.png');
+  background: url('/winchamp/img/contbg.png');
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 30px;
@@ -454,12 +454,12 @@ body > *:nth-child(7) > div div section span {
   padding: 5px 20px;
   padding-left: 50px;
   color: #134866;
-  background: white url('../img/indexicon.png');
+  background: white url('/winchamp/img/indexicon.png');
   background-repeat: no-repeat;
   background-position: 20px 50%;
 }
 body > *:nth-child(7) > div div section span + span {
-  background: white url('../img/indexicon2.png');
+  background: white url('/winchamp/img/indexicon2.png');
   background-repeat: no-repeat;
   background-position: 20px 50%;
 }

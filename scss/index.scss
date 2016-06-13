@@ -277,7 +277,7 @@ body > *:nth-child(6) {
 body > *:nth-child(7) {
   background: image-url('contbg.png', false, false);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 445px;
   margin-top: 30px;
   @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {
     background-size: 100% 115px;
@@ -339,7 +339,7 @@ body > *:nth-child(7) {
           margin: 0;
           height: 64px;
           text-align: center;
-          font-size: 30px;
+          font-size: 25px;
           line-height: 60px;
           margin-bottom: 10px;
         }
@@ -370,6 +370,7 @@ body > *:nth-child(7) {
   }
 }
 body > form {
+  margin-top: 20px;
   background-color: white;
   > div {
     @media screen and (min-width: 0px) and (max-width: #{$mediaMobileWidth - 1px}) {

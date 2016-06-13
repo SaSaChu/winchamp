@@ -364,7 +364,7 @@ body > *:nth-child(6) > div > div:last-child img + img {
 body > *:nth-child(7) {
   background: url('/winchamp/img/contbg.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 445px;
   margin-top: 30px;
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
@@ -444,7 +444,7 @@ body > *:nth-child(7) > div div section h3 {
   margin: 0;
   height: 64px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 60px;
   margin-bottom: 10px;
 }
@@ -470,6 +470,7 @@ body > *:nth-child(7) > div div section iframe {
 }
 
 body > form {
+  margin-top: 20px;
   background-color: white;
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {

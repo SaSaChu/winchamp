@@ -28,11 +28,32 @@ body > *:nth-child(5) {
       border-bottom: 2px solid rgba(147, 182, 221, 1.00);
       padding-bottom: 10px;
 
-      @include split-left(32px);
+      @include clearfix();
+      
+      img {
+        float: left;
+        display: inline-block;
+        width: 32px;
+      }
+      time {
+        float: left;
+        display: inline-block;
+        text-align: center;
+        padding: 5px 20px;
+        background-color: rgba(140, 115, 105, 1.00);
+        color: white;
+        @include border-radius(20px);
+        margin-top: 3px;
+        margin-left: 5px;
+        font-size: 13px;
+      }
       @include last {
+        float: left;
+        display: inline-block;
         color: rgba(250, 138, 1, 1.00);
         font-size: 22px;
         padding-left: 10px;
+        line-height: 33px;
         font-weight: bold;
       };
     }

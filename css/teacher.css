@@ -80,11 +80,10 @@ body > *:nth-child(5) > div {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   text-align: left;
-  padding: 20px;
 }
 body > *:nth-child(5) > div > header {
-  border-bottom: 2px solid #93b6dd;
-  padding-bottom: 10px;
+  padding: 20px;
+  background: url('/winchamp/img/f3.png');
   *zoom: 1;
 }
 body > *:nth-child(5) > div > header:after {
@@ -93,100 +92,131 @@ body > *:nth-child(5) > div > header:after {
   line-height: 0;
   clear: both;
 }
-body > *:nth-child(5) > div > header img {
+body > *:nth-child(5) > div > header > *:first-child, body > *:nth-child(5) > div > header > *:last-child {
   float: left;
+  position: relative;
   display: inline-block;
-  width: 32px;
-}
-body > *:nth-child(5) > div > header time {
-  float: left;
-  display: inline-block;
-  text-align: center;
-  padding: 5px 20px;
-  background-color: #8c7369;
-  color: white;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  margin-top: 3px;
-  margin-left: 5px;
-  font-size: 13px;
 }
 body > *:nth-child(5) > div > header > *:last-child {
-  float: left;
-  display: inline-block;
-  color: #fa8a01;
+  float: right;
+}
+body > *:nth-child(5) > div > header > *:first-child {
+  width: 32px;
+}
+body > *:nth-child(5) > div > header > *:last-child {
+  width: calc(100% - 32px);
+}
+body > *:nth-child(5) > div > header > *:last-child {
+  color: white;
   font-size: 22px;
   padding-left: 10px;
-  line-height: 33px;
   font-weight: bold;
 }
 body > *:nth-child(5) > div article {
-  min-height: 500px;
-  padding-top: 20px;
+  padding: 20px;
 }
-body > *:nth-child(5) > div article > header {
-  border-bottom: 1px dashed #93b6dd;
-  padding-bottom: 20px;
+body > *:nth-child(5) > div article > div + div {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1000px) {
+  body > *:nth-child(5) > div article > div {
+    *zoom: 1;
+  }
+  body > *:nth-child(5) > div article > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  body > *:nth-child(5) > div article > div > *:first-child, body > *:nth-child(5) > div article > div > *:last-child {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  body > *:nth-child(5) > div article > div > *:last-child {
+    float: right;
+  }
+  body > *:nth-child(5) > div article > div > *:first-child {
+    width: 240px;
+  }
+  body > *:nth-child(5) > div article > div > *:last-child {
+    width: calc(100% - 240px);
+  }
+}
+body > *:nth-child(5) > div article > div > *:first-child {
+  background: url('/winchamp/img/f4.png');
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  background-size: 100%;
+  position: relative;
+}
+@media screen and (min-width: 1000px) {
+  body > *:nth-child(5) > div article > div > *:first-child {
+    min-height: 200px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div article > div > *:first-child {
+    display: none;
+  }
+}
+body > *:nth-child(5) > div article > div > *:first-child > img {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 25px;
+}
+body > *:nth-child(5) > div article > div > *:last-child {
+  padding-left: 20px;
+  border-bottom: 1px dashed rgba(97, 194, 196, 0.5);
+  padding-bottom: 50px;
+}
+body > *:nth-child(5) > div article > div > *:last-child > header {
+  margin-top: 10px;
   *zoom: 1;
 }
-body > *:nth-child(5) > div article > header:after {
+body > *:nth-child(5) > div article > div > *:last-child > header:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-body > *:nth-child(5) > div article > header > *:first-child, body > *:nth-child(5) > div article > header > *:last-child {
+body > *:nth-child(5) > div article > div > *:last-child > header > span {
   float: left;
-  position: relative;
   display: inline-block;
-}
-body > *:nth-child(5) > div article > header > *:last-child {
-  float: right;
-}
-body > *:nth-child(5) > div article > header > *:first-child {
-  width: 150px;
-}
-body > *:nth-child(5) > div article > header > *:last-child {
-  width: calc(100% - 150px);
-}
-body > *:nth-child(5) > div article > header > *:first-child {
-  text-align: center;
-  padding: 5px;
-  background-color: #8c7369;
+  padding: 10px;
+  padding-top: 5px;
   color: white;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  margin-top: 3px;
+  height: 50px;
+  line-height: 38px;
+  font-weight: bold;
 }
-body > *:nth-child(5) > div article > header > *:last-child {
-  margin: 0;
-  padding-left: 25px;
-  color: #8c7369;
-  position: relative;
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div article > div > *:last-child > header > span {
+    height: auto;
+  }
 }
-body > *:nth-child(5) > div article > header > *:last-child:before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  width: 3px;
-  height: 3px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #8c7369;
+body > *:nth-child(5) > div article > div > *:last-child > header > span:first-child {
+  font-size: 30px;
+  background-color: #61c2c4;
+  margin-right: 2px;
 }
-body > *:nth-child(5) > div article > div {
+body > *:nth-child(5) > div article > div > *:last-child > header > span:last-child {
+  background-color: rgba(123, 124, 125, 0.7);
+  font-size: 22px;
+}
+@media screen and (min-width: 0px) and (max-width: 999px) {
+  body > *:nth-child(5) > div article > div > *:last-child > header > span:last-child {
+    margin-left: 0;
+  }
+}
+body > *:nth-child(5) > div article > div > *:last-child > div {
   margin-top: 20px;
-  line-height: 23px;
-  font-size: 16px;
+  line-height: 30px;
 }
 @media screen and (min-width: 1000px) {
-  body > *:nth-child(5) > div article > div {
-    padding-left: 175px;
+  body > *:nth-child(5) > div article > div > *:last-child > div {
+    padding-left: 70px;
   }
 }
 

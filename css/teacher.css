@@ -161,9 +161,9 @@ body > *:nth-child(5) > div article > div > *:first-child {
   }
 }
 body > *:nth-child(5) > div article > div > *:first-child > img {
-  width: 80%;
+  width: 81%;
   position: absolute;
-  left: 10%;
+  left: 9%;
   top: 25px;
 }
 body > *:nth-child(5) > div article > div > *:last-child {

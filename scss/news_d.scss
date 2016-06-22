@@ -29,7 +29,7 @@ body > *:nth-child(5) {
       padding-bottom: 10px;
 
       @include clearfix();
-      
+
       img {
         float: left;
         display: inline-block;
@@ -60,6 +60,7 @@ body > *:nth-child(5) {
     article {
       min-height: 500px;
       padding-top: 20px;
+      padding: 20px 155px;
       >  header {
         border-bottom: 1px dashed rgba(147, 182, 221, 1.00);
         padding-bottom: 20px;
@@ -124,6 +125,10 @@ body > *:nth-child(5) {
       width: calc(100% - 10px * 2) !important;
       float: none !important;
       margin: 10px !important;
+
+      article {
+        padding: 15px;
+      }
     }
   }
 }

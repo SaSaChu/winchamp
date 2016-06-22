@@ -124,6 +124,7 @@ body > *:nth-child(5) > div > header > *:last-child {
 body > *:nth-child(5) > div article {
   min-height: 500px;
   padding-top: 20px;
+  padding: 20px 155px;
 }
 body > *:nth-child(5) > div article > header {
   border-bottom: 1px dashed #93b6dd;
@@ -224,5 +225,8 @@ body > *:nth-child(5) > div article > div {
     width: calc(100% - 10px * 2) !important;
     float: none !important;
     margin: 10px !important;
+  }
+  body > *:nth-child(5) > div article {
+    padding: 15px;
   }
 }

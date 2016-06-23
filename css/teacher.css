@@ -197,7 +197,7 @@ body > *:nth-child(5) > div article > div > *:last-child > header > span {
   }
 }
 body > *:nth-child(5) > div article > div > *:last-child > header > span:first-child {
-  font-size: 30px;
+  font-size: 22px;
   background-color: #61c2c4;
   margin-right: 2px;
 }

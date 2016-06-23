@@ -364,7 +364,7 @@ body > *:nth-child(6) > div > div:last-child img + img {
 body > *:nth-child(7) {
   background: url('/winchamp/img/contbg.png');
   background-repeat: no-repeat;
-  background-size: 100% 430px;
+  background-size: 100% 446px;
   margin-top: 30px;
 }
 @media screen and (min-width: 0px) and (max-width: 999px) {
